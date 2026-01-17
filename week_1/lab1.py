@@ -45,11 +45,12 @@ for i in range (1,101):
 
 #exercise 4
 def facto (x):
-    if (x ==1 or x==0):
-        return 1
-    else:
-        return x * facto(x-1)
-    
+    sum = 1
+    while x > 1:
+        sum = sum * x
+        x = x - 1
+    return sum
+
 x = int(input("Enter a number for factorial:"))
 print(facto(x))
 
