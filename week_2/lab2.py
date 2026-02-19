@@ -1,7 +1,7 @@
 #exercise 1
-list = []
-list= input("enter list of num:").split()
-rev= list[::-1]
+listess = []
+listess= input("enter list of num:").split()
+rev= listess[::-1]
 print(rev)
 
 #exercise 2
@@ -25,14 +25,13 @@ print(merge_list)
 
 #exercise 4
 
-
 list5 =[]
-list5 = input("enter a list of num:").split()
-
-min_num = min(list5)
-max_num = max(list5)
-
-print(min_num,max_num)
+list5 =input("enter a list of num:").split()
+list5.sort()
+min_num = list5[0]
+max_num = list5[-1]
+tupless = min_num + max_num
+print(tupless)
 
 #exercise 5
 city=("phnom penh","siem reap","battambang")
@@ -70,7 +69,7 @@ print(result)
 #exercise 8
 
 dict1 = { "a": 1, "b": 2, "c": 3 }
-dict2 = { "b": 3, "c": 4 }
+dict2 = { "b": 3, "c": 4, "d":1 }
 
 merge_dict = dict1.copy()
 for key, value in dict2.items():
